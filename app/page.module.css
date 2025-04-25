@@ -1,0 +1,250 @@
+.Product_title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.maintital {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin: 20px 0px;
+}
+
+.mainsubtital {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.Product_dic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+.maintitalcontainer {
+  width: 75%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .Product_title {
+    font-size: 18px;
+  }
+  .Product_dic {
+    font-size: 14px;
+  }
+  .maintital {
+    font-size: 40px;
+  }
+  .mainsubtital {
+    font-size: 22px;
+  }
+}
+
+.Product_grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 14px;
+}
+.Product_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 14px;
+}
+.said_fillter {
+  width: 300px;
+}
+.total_items {
+  margin: 10px 0px;
+}
+.Filltertogel {
+  color: #888792;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: right;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+}
+.rotedRight {
+  transform: rotate(90deg);
+  margin: 0px 4px;
+}
+.rotedLeft {
+  margin: 0px 4px;
+  transform: rotate(270deg);
+}
+@media (max-width: 576px) {
+  .said_fillter {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 30px;
+    z-index: 999;
+    overflow: scroll;
+    height: calc(100vh - 0px);
+  }
+}
+.filters_heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0%;
+  margin: 3% 0%;
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 2px solid #e5e5e5;
+  span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.container {
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+/* Responsive max-widths similar to Bootstrap */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* For larger screens (desktop) */
+@media (min-width: 768px) {
+  .Product_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Product_grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: calc(100% - 300px);
+    gap: 20px;
+    padding: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Product_grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.Product_card {
+  overflow: hidden;
+  background: #fff;
+}
+
+.Product_image_container {
+  position: relative;
+  width: auto;
+  height: 224px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.Product_image {
+  object-fit: contain;
+}
+
+/* styles/AccordionFilter.module.css */
+
+.filterMenu {
+  width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+.filterLabel {
+  display: block;
+  padding: 10px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filterToggle {
+  display: none;
+}
+
+/* Animation for content */
+.filterContent {
+  display: none;
+  padding: 0 20px;
+  background-color: #f9f9f9;
+  border-left: 2px solid #ccc;
+  margin-bottom: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.filterToggle:checked + .filterContent {
+  display: block;
+  max-height: 200px;
+  padding: 10px 20px;
+}
+
+.filterContent ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.filterContent li {
+  margin: 5px 0;
+}
