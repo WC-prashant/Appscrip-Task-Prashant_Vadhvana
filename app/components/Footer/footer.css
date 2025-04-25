@@ -2,8 +2,10 @@
   background-color: black;
   width: 100%;
   color: #fff !important;
-  padding: 50px 70px;
   height: fit-content;
+}
+.footer-class div{
+  padding: 50px 70px;
 }
 .down-Arrow-footer {
   display: none;
