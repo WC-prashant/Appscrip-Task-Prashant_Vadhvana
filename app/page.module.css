@@ -11,6 +11,11 @@
   width: 100%;
   margin-top: 10px;
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
 
 .maintital {
   font-family: "Poppins", sans-serif;
